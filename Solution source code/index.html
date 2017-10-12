@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="author" content="Siddharth Shubham Pal (github.com/siddharthshubhampal) And Shantanu Mishra."/>
+	<meta name="description" content="Question Paper Solution Source Code For Web Designing Event 2017 by GDG-128!"/>
+    <title>WDC '17</title>
+    
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME CSS -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />    
+  <!-- Google	Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+
+
+<!-- =========================
+ Overlay Styles Press F9 to enable!
+===========================-->
+<style type="text/css">
+.overlay-show{
+position:fixed;
+ top:0;
+ left:0;
+ background:rgba(0,0,0,0.95);
+ z-index:1035; 
+ width:100%;
+ height:100%;
+ display:none;
+ }
+</style>
+</head>
+
+<body onload="alert('This is the reference source code for Web Designing Event, 2017 participants.\n\nEvent Organized By: Google Developers’ Group, J128 Team at JIIT-128.\n\nPress F9 key to show GDG-Badge Overlay!');">
+	<!-- Screen Overlay Div -->
+<div class="overlay-show" onclick='this.style.display ="none";' onmousemove='this.style.display ="none";'><center><br><br><br><img src="images/gdg-badge.png" width="250px" height="250px"/><br><br><h4 style="font-size:50px;color:white;">Web Designing Event, 2k17<br><br><br>GDG-J128</h4></center></div>
+	<!-- Screen Overlay Div End -->
+
+<div class="container-fuild"> 
+<div class="navbar-wrapper">
+  <nav class="navbar navbar-default navbar-fixed-top" style="margin-bottom:0px;"/>
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+       <a class="navbar-brand" href="javascript:void(0);"><img src="images/gdg-logo.png" alt="GDG-J128">
+        </a>
+      </div>
+      <div id="navbar3" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#About-sec">About</a></li>
+          <li><a href="#courses">Courses</a></li>
+		  <li><a href="#faculty">Faculty</a></li>
+		  <li class="hidden-lg hidden-md"><a href="#form"><span class="glyphicon glyphicon-pencil" style="color:#1b1189"></span> Enquiry</a></li>
+		  
+        
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+</div>
+      <!--NAVBAR SECTION END-->
+
+
+      <div>	
+		<a href="https://www.znetlive.com" target="_blank"><img src="images/znetlivelogo.png" class="znet img-responsive"></a>
+		  </div>
+	  <div>	
+		<a href="https://www.codingblocks.com" target="_blank"><img src="images/cblogo.png" class="cblogo img-responsive"></a>
+	   </div>
+            
+        <div class="home-sec" id="home" >
+           <div class="overlay" style="height:569px">
+ <div class="container">
+           <div class="row" >
+           
+               <div class="col-md-8 text-center">
+               
+                <div class="set-flexi" id="main-section" >
+                    <ul class="slides">
+                      
+                        <li>	 <i class="fa fa-paper-plane-o fa-4x" ></i>
+                              <h1>COME FALL IN LOVE WITH CODING with US!</h1>
+							  <h3>Best platform for Learning &amp; Training</h3>
+                           
+                        </li>                      
+                    </ul>
+                </div>                   
+            </div>
+				<div id="polina" class="col-sm-4 hidden-xs hidden-sm">
+					<h4 class="text-center" id="login-heading" style="padding-bottom:0px">ENQUIRY NOW</h4>
+					
+					<hr class="hr-or">
+				  
+					<form class="form-horizontal" action="javascript:void(0);" method="POST">
+					<div class="form-group has-success has-feedback">
+					  <div class="col-sm-12">
+						<input type="text" class="form-control" id="name" placeholder="Name" required>
+						<span class="glyphicon glyphicon-user form-control-feedback"></span>
+					  </div>
+					</div>
+					<div class="form-group has-success has-feedback">
+					  <div class="col-sm-12">
+						<input type="text" class="form-control" id="contact" placeholder="Mobile Number" required>
+						<span class="glyphicon glyphicon-phone form-control-feedback"></span>
+					  </div>
+					</div>
+					 <div class="form-group has-success has-feedback">
+					  <div class="col-sm-12">
+						<input type="text" class="form-control" id="des" placeholder="Technology Looking for!" required>
+						<span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+					  </div>
+					</div>
+				  <div class="text-center" style="padding:5px">
+				  <input type="submit" onclick="postData();" class="btn btn-lg btn-block btn-success" value="SEND">
+				  </div>
+				  </form>
+	
+				</div>
+			
+			
+               </div>
+			</div>
+           </div>
+           
+       </div>
+       <!--HOME SECTION END-->   
+   
+    <!--HOME SECTION TAG LINE END-->   
+	
+	<div class="howitworks" id="courses">
+         <div class="container-fluid" >
+    		<h1 class="header-line text-center">OUR COURSES</h1>
+							<p> What we love to teach </p>
+					<div class="row" style="padding-bottom:20px; margin: 0px auto; width:90%;display: flex;
+  flex-wrap: wrap;">
+						
+							<div class="col-sm-6 col-md-3 col-xs-12" style="text-align:center">
+								<img class="img-responsive" style="max-width:200px;padding: 10px; margin: 0px auto" src="images/android-logo.png" />
+								<div>
+									<h4>PANDORA</h4>
+								</div>	
+							</div>
+							
+							<div class="col-md-3 col-sm-6 col-xs-12" style="text-align:center">
+								<img class="img-responsive" style="max-width:200px;margin: 0px auto" src="images/nodejs.png"/>
+								<div>
+									<h4>NODE JS ELIXIR</h4>
+								</div>	
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12" style="text-align:center">
+								<img class="img-responsive" style="max-width:200px;padding:10px; margin: 0px auto" src="images/launchpad.png"/>
+								<div>
+									<h4>LAUCHPAD</h4>
+								</div>	
+							</div>
+							
+							<div class="col-md-3 col-sm-6 col-xs-12" style="text-align:center;">
+								<img class="img-responsive" style="max-width:200px; margin: 0px auto;" src="images/crux.png"/>
+								<div>
+									<h4>CRUX</h4>
+									
+								</div>	
+							</div>
+						</div>
+						
+				
+			          
+      </div>
+	  
+	  <div class="container-fluid" >
+    		<h1 class="header-line text-center">OUR PROGRAMS</h1>
+							<p> What we offer for students </p>
+					<div class="row" style="padding-bottom:50px;">
+						
+							<div class="col-md-3  col-sm-4 " style="text-align:center">
+								<i class="fa fa-globe  icon-round-border"></i>
+								<div>
+									<h4>Webinar</h4>
+									<h6> Coding Blocks provide Webinar with live projects and courses.</h6>
+								</div>
+							</div>
+
+							<div class="col-md-3  col-sm-4 " style="text-align:center">
+								<i class="fa fa-paper-plane-o  icon-round-border"></i>
+								<div>
+									<h4>Workshops</h4>
+									<h6> We provide Workshops on latest emerging technologies such as Node.js, Android, Data structures and Java etc.</h6>
+								</div>
+							</div>
+							
+							<div class="col-md-3 col-sm-4 " style="text-align:center">
+								<i class="fa fa-user  icon-round-border"></i>
+							<div>	
+									<h4 style="text-align:center">Hackathons</h4>
+									<h6>We host and sponsor various Hackathons to encourage students for development.</h6>
+								</div>
+							</div>
+							
+							<div class="col-md-3 col-sm-4 " style="text-align:center">
+								<i class="fa fa-pencil  icon-round-border"></i>
+								<div>
+									<h4>Bootcamps</h4>
+									<h6>We also provide fast paced bootcamps for Beginners and Advanced Programmers on various topics.</h6>
+								</div>
+							</div>
+						</div>
+						
+				
+			          
+      </div>
+	</div>
+   <!-- HOOWITWORKS SECTION END-->
+   
+ <!--REVIEW SECTION STARTS-->
+    <div id="review-sec">
+    		<div class="overlay">
+            	
+                <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 text-center"> 
+                    <h3 style="font-size:20px">“When I was watching “Dear Zindagi”, I could relate Sharukh Khan to Arnav Bhaiya. The way Sharukh Khan was giving life lessons to Aliya Bhatt, in the same way Arnav Bhaiya will give coding life lessons which will guide you throughout your code life...”</h3> 
+                    <small style="font-size:17px">Review By:- Rishabh Khanna ( JIIT student )</small>
+                </div>
+            </div>
+            
+            	</div>
+     </div>
+    <!--REVIEW SECTION ENDS-->
+   <div id="faculty">
+         <div class="container-fluid" >
+    		<h1 class="header-line text-center">OUR FACULTY</h1>
+		<div style="padding-top:40px">
+		<div class="col-lg-3 col-xs-12">
+		<img class="img-responsive img-circle" style="max-width:200px; margin: 0px auto" src="images/manmohan.jpg"/>
+		</div>
+		<div class="col-lg-9 col-xs-12">
+		<h3> Mr MANMOHAN GUPTA</h3>
+		<p>Manmohan Gupta (Munna Bhaiya), an IIT-Delhi graduate, is an ace programmer, technocrat, an entrepreneurial doyen and a mathematician. He has co-founded Software giant, Nagarro and Vidyamandir Classes(VMC). Having seen both the industries from up close, he could identify a key gap between college education and industry needs and has now set out to carve the path that will turn even ordinary students into industry-ready coders.</p>
+		<button class="profile-btn">Full Profile</button>
+			</div>
+			</div>
+		</div>
+		</div
+	 </div>
+
+
+    <div id="About-sec" style="min-height:423px" >
+       	<div class="container set-pad" style="width:80%; text-align:justify">
+             <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 class="header-line"> ABOUT US </h1>
+                   
+                    </div>
+                    </div>
+					<p style="font-size:17px; padding-top:15px">Welcome to the Google Developers’ Group, Jaypee Institute of Information and Technology!
+
+Also known as GDG JIIT NOIDA, this is a platform made for every tech-savvy who needs to quench his thirst for technology, and take him to dizzying heights. Made from a team of high-spirited members, we strive to spread our love for Google and its widespread works.
+Our team motto is:
+
+Giving Direction to Greatness
+"</p>
+					<p style="font-size:17px; padding-bottom:50px">By quizzing, conducting competitions and encouraging queries, we aim in taking the usual academic standards to a new level. Our periodic newsletter is another way through which we keep our members updated, while bringing out the latest, biggest tech buzz.
+
+We call ourselves the Tech Talisman.
+
+We seek passionate students to come join us, and make the best of their potential in designing, coding, hacking and innovative development for a technical future, that we are a proud to contribute to!</p>
+                    </div>
+                    
+                    
+             </div>
+<!--FORM for mobile-->
+<div id="form" class="col-sm-12 col-xs-12 hidden-md hidden-lg" style="margin-top:0px; padding: 50px auto;">
+					<h4 class="text-center" id="login-heading" style="padding-bottom:0px">ENQUIRY NOW</h4>
+					<div class="login-or">
+					<hr class="hr-or">
+				  </div>
+					<form class="form-horizontal" action="javascript:void(0);" method="POST">
+					<div class="form-group has-success has-feedback">
+					  <div class="col-sm-12">
+						<input type="text" class="form-control" id="name1" placeholder="Name" required>
+						<span class="glyphicon glyphicon-user form-control-feedback"></span>
+					  </div>
+					</div>
+					<div class="form-group has-success has-feedback">
+					  <div class="col-sm-12">
+						<input type="text" class="form-control" id="contact1" placeholder="Mobile Number" required>
+						<span class="glyphicon glyphicon-phone form-control-feedback"></span>
+					  </div>
+					</div>
+					 <div class="form-group has-success has-feedback">
+					  <div class="col-sm-12">
+						<input type="text" class="form-control" id="des1" placeholder="Technology Looking for!" required>
+						<span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+					  </div>
+					</div>
+				  <div class="text-center" style="padding:5px">
+				  <input type="submit" onclick="postData_mobile();" class="btn btn-lg btn-block btn-success" value="SEND">
+				  </div>
+				  </form>
+	
+</div>
+
+	 
+
+            
+<section id="credits" class="text-center">
+	<span class="social">
+	<a href="#"><i class="fa fa-facebook"></i></a>
+	<a href="#"><i class="fa fa-twitter"></i></a>
+	<a href="#"><i class="fa fa-linkedin"></i></a>
+	<a href="#"><i class="fa fa-google-plus"></i></a>
+	</span><br/>
+	FOOD Sponsor: Classic Belgian Waffles</br>
+
+	© 2017 Website Designing Event | All Rights Reserved.
+	<br/>
+</section>
+          
+     <!-- FOOTER SECTION END-->
+   
+    <!--  Jquery Core Script -->
+
+   <script src="assets/js/jquery-1.10.2.js"></script>
+    <!--  Core Bootstrap Script -->
+    <script src="assets/js/bootstrap.js"></script>
+     </div>
+
+
+<!-- ==================SCRIPT FOR OVERLAY Press F9.============= -->
+	 <script>
+document.addEventListener("keyup",keyCapt,false);
+ function keyCapt(e){
+   if(e.type=="keyup"){
+		if(e.keyCode==120)
+			document.getElementsByClassName("overlay-show")[0].style.display="block";
+    }
+ }
+ 	</script>
+
+<!-- =========SCRIPT FOR SHOWING FORM DATA IN POP UP ALERT ================== -->
+<script>
+	function postData()
+		{
+			var name=document.getElementById("name").value;
+			var mob=document.getElementById("contact").value;
+			var str=document.getElementById("des").value;
+			alert("Your Submitted Data:\n\n"+name+"\n"+mob+"\n"+str);
+		}
+	function postData_mobile()
+		{
+			var name=document.getElementById("name1").value;
+			var mob=document.getElementById("contact1").value;
+			var str=document.getElementById("des1").value;
+			alert("Your Submitted Data:\n\n"+name+"\n"+mob+"\n"+str);
+		}
+</script>
+
+</body>
+</html>
